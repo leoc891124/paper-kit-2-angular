@@ -2,7 +2,7 @@
     <div class="filter"></div>
     <div class="container">
         <div class="motto text-center">
-            <h1>Evelyn's excluise rentals</h1>
+            <h1 style="font-family:Felipa, serif;">Evelyn's exclusive rentals</h1>
             <!--a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a>
             <button type="button" class="btn btn-outline-neutral btn-round">Download</button-->
         </div>
@@ -59,15 +59,15 @@
         <div class="card page-carousel">
             <ngb-carousel>
                 <ng-template ngbSlide>
-                    <img src="./assets/img/event1.png" alt="Random first slide">
+                    <img src="./assets/img/event1.png" alt="Photo events 2">
                     
                 </ng-template>
                 <ng-template ngbSlide>
-                    <img src="./assets/img/event3.png" alt="Random second slide">
+                    <img src="./assets/img/event3.png" alt="Photo events 2">
                     
                 </ng-template>
                 <ng-template ngbSlide>
-                    <img src="./assets/img/event4.png" alt="Random third slide">
+                    <img src="./assets/img/event4.png" alt="Photo events 3">
                     
                 </ng-template>
             </ngb-carousel>
@@ -79,38 +79,69 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
-                    <h2 class="text-center">Keep in touch?</h2>
-                    <form class="contact-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Name</label>
-                                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true" (blur)="focus=false" >
-                                </div>
+                    <h2 class="text-center">Contact us!</h2>
+                    <br><br>
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="./assets/img/logo.png" class="card-img" alt="profile">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Evelyn and Luis Coneo</h5>
+                              <!--p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p-->
+                              <p class="card-text"><small class="text-muted">Email address: <a href="mailto:evelynconeo68@gmail.com">evelynconeo68&#64;gmail.com</a></small></p>
+                              <p class="card-text"><small class="text-muted">Phone numbers: &nbsp;&nbsp;&nbsp;&nbsp;732-347-9147 </small></p>
+                                <p style="text-align:center;" class="card-text"><small class="text-muted" > 732-762-1854 </small></p> 
+                            
                             </div>
-                            <div class="col-md-6">
-                                <label>Email</label>
-                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text">  <i class="nc-icon nc-email-85"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true" (blur)="focus1=false" >
-                                </div>
-                            </div>
+                          </div>
                         </div>
-                        <label>Message</label>
-                        <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
-                        <div class="row">
-                            <div class="col-md-4 mr-auto ml-auto">
-                                <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                      </div>
+                 </div>
             </div>
         </div>
     </div>
+
+    <div class="section section-navbars">
+       
+        <div id="navbar">
+            
+            <div class="navigation-example">
+                
+                
+                
+                
+               
+                <nav class="navbar navbar-expand-lg navbar-transparent">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Follow us!</a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-transparent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-bar"></span>
+                            <span class="navbar-toggler-bar"></span>
+                            <span class="navbar-toggler-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-transparent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=573116444631&text=Hola!%20Quiero%20hacer%20una%20consulta"><i class="fa fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+        </div>
+    </div>
+    
+    
+
 </div>
