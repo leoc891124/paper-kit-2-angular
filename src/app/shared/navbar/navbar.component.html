@@ -1,23 +1,35 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
-    <div class="container-fluid">
+<nav class="navbar navbar-transparent navbar-expand-lg fixed-top" color-on-scroll="500">
+    <!--div class="container-fluid"-->
         <!--div class="navbar-nav"-->
-            
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+        <a [routerLink]="['/home']" class="navbar-brand" rel="tooltip" title="home page" data-placement="bottom">Evelyn's Home<span class="sr-only">(current)</span></a>
+        <div class="ml-auto d-flex justify-content-start">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
            </button>
-        <!--/div-->
+        </div>
         
-                <a [routerLink]="['/home']" class="navbar-brand" rel="tooltip" title="home page" data-placement="bottom">Evelyn's Home<span class="sr-only">(current)</span></a>
+                <!--a [routerLink]="['/home']" class="navbar-brand" rel="tooltip" title="home page" data-placement="bottom">Evelyn's Home<span class="sr-only">(current)</span></a>
            
-                <a [routerLink]="['/home']" class="navbar-brand" rel="tooltip" title="All about us" data-placement="bottom">About us</a>
+                <a [routerLink]="['/home']" class="navbar-brand" rel="tooltip" title="All about us" data-placement="bottom">About us</a-->
           
         
         
-        <div class="navbar-collapse" id="navbarToggler">
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <!--li class="nav-item">
+                    <a [routerLink]="['/home']" class="nav-link" rel="tooltip" title="home page" data-placement="bottom">Evelyn's Home<span class="sr-only">(current)</span></a>
+                </li-->
+                <li class="nav-item">
+                    <a [routerLink]="['/home']" class="nav-link" rel="tooltip" title="All about us" data-placement="bottom">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/home']" class="nav-link" rel="tooltip" title="Services" data-placement="bottom">Services</a>
+                </li>
+            <!--/ul>
             
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav"-->
                 <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/people/Evelyn-Exclusive-Rentals/100064390590542/" target="_blank">
                         <i class="fa fa-facebook-square"></i>
@@ -39,5 +51,5 @@
                 </li>
             </ul>
         </div>
-    </div>
+    
 </nav>
