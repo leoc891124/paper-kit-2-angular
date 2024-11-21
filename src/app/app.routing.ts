@@ -4,18 +4,17 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+
+import { AboutComponent } from './examples/about/about.component';
+import { ServiceComponent } from './examples/service/service.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',             component: LandingComponent },
-    { path: 'user-profile',     component: ProfileComponent },
-    { path: 'signup',           component: SignupComponent },
-    { path: 'landing',          component: ComponentsComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'service',     component: ServiceComponent },
+    { path: 'about',           component: AboutComponent },
+    { path: 'landing',          component: ComponentsComponent }
 ];
 
 @NgModule({
